@@ -1,3 +1,5 @@
+import type { JSX } from 'react/jsx-runtime';
+
 export type SocialMediaInfo = {
 	platform: 'Github' | 'LinkedIn' | 'Twitter' | 'Instagram';
 	url: string;
