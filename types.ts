@@ -2,7 +2,7 @@ export type SocialMediaInfo = {
   platform: "Github" | "LinkedIn" | "Twitter" | "Instagram";
   url: string;
   icon: JSX.Element;
-  color: string;
+  hoverClass: string;
 };
 
 export type Post = {

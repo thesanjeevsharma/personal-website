@@ -10,25 +10,25 @@ const socialLinks: SocialMediaInfo[] = [
   {
     platform: "LinkedIn",
     url: "https://linkedin.com/in/thesanjeevsharma",
-    color: "blue-500",
+    hoverClass: "hover:text-blue-500",
     icon: <FaLinkedin size={18} color="#3b82f6" />,
   },
   {
     platform: "Instagram",
     url: "https://instagram.com/thesanjeevsharma",
-    color: "violet-500",
+    hoverClass: "hover:text-violet-500",
     icon: <FaInstagram size={18} color="#8b5cf6" />,
   },
   {
     platform: "Twitter",
     url: "https://twitter.com/thesnjvsharma",
-    color: "sky-500",
+    hoverClass: "hover:text-sky-500",
     icon: <FaTwitter size={18} color="#0ea5e9" />,
   },
   {
     platform: "Github",
     url: "https://github.com/thesanjeevsharma",
-    color: "neutral-100",
+    hoverClass: "hover:text-neutral-500",
     icon: <FaGithub size={18} color="#f5f5f5" />,
   },
 ];
@@ -50,7 +50,7 @@ export default function Home({ posts }: Props) {
         />
         <div className="flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-8">
-            Hey, I&apos;m Sanjeev.
+            Hey 👋, I&apos;m Sanjeev.
             <br />
             <span className="text-slate-500">
               I&apos;m a frontend engineer at Syfe.
@@ -58,9 +58,9 @@ export default function Home({ posts }: Props) {
           </h1>
 
           <div className="flex flex-col md:flex-row">
-            {socialLinks.map(({ platform, url, color, icon }) => (
+            {socialLinks.map(({ platform, url, hoverClass, icon }) => (
               <a
-                className={`flex items-center text-slate-500 mr-4 hover:text-${color} mb-4 md:mb-0`}
+                className={`flex items-center text-slate-500 mr-4 mb-4 md:mb-0 ${hoverClass}`}
                 key={platform}
                 href={url}
               >
