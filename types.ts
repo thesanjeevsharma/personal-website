@@ -15,3 +15,9 @@ export type Post = {
   tag_list: string[];
   public_reactions_count: number;
 };
+
+export type Project = {
+  name: string;
+  url: string;
+  description: string;
+}
